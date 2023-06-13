@@ -46,5 +46,5 @@ if sel==3:
    print('''
    [1]Numero Atomico 
    [2]
-   [3]
+   [3]we
    ''')
