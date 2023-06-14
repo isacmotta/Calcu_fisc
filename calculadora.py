@@ -2,6 +2,7 @@
 #importações de bibliotecas
 import numpy
 from numpy import*
+from tkinter import*
 print('Calculador físico:')
 print('CRIADO POR ISAC MOTTA')
 print('''
@@ -10,7 +11,7 @@ print('''
 [3]Tempo
 [4]Calculador Atomico
 [5]
-[6]
+[6]Peso
 [7]Matematica 
 [8]Universo(beta)
 [9]
@@ -38,7 +39,8 @@ if sel==1:
 #VELOCIDADE Torriceli
     elif sel1==2:
        print('Formula de Torriceli')
-#
+
+# 
 #calculos envolvendo Distancias
 elif sel==1:
    print('Calculos envolvendo distancia')
@@ -62,3 +64,6 @@ if sel==3:
 
 ###
 #universo
+if sel==8:
+   menu=Tk()
+   menu.mainloop()
