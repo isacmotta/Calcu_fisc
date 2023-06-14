@@ -11,7 +11,11 @@ print('''
 [4]Calculador Atomico
 [5]
 [6]
-
+[7]Matematica 
+[8]Universo(beta)
+[9]
+[10]
+[x]sair
 Use com
 ''')
 sel=int(input('selecione uma opção: '))
@@ -29,10 +33,12 @@ if sel==1:
 #VELOCIDADE_MRUV
     if sel1==1:
        print('MRUV')
-       print('')
+       print('Vamos Começar')
+       
 #VELOCIDADE Torriceli
     elif sel1==2:
-       print('')
+       print('Formula de Torriceli')
+#
 #calculos envolvendo Distancias
 elif sel==1:
    print('Calculos envolvendo distancia')
@@ -40,11 +46,19 @@ elif sel==1:
    [1]Ano-Luz
    [2]Converso
    ''')
+#
 #tempo
 if sel==3:
    print('tempo')
    print('''
-   [1]Numero Atomico 
+   [1]Distorção Temporal a Partir da Velocidade 
    [2]
-   [3]we
+   [3]
    ''')
+   sel2= int(input('Selecione a opção: '))
+   #
+   if sel2 ==1:
+      print('Distorção temporal')
+
+###
+#universo
