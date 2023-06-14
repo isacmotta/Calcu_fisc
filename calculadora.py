@@ -1,72 +1,65 @@
-#inciando 
-#importações de bibliotecas
 import numpy
 from numpy import*
 from tkinter import*
-print('Calculador físico:')
+##-------------------------------------------#
+print('Calculador...')
 print('CRIADO POR ISAC MOTTA')
 print('''
+[!]Conversores
 [1]Velocidade
-[2]Distancia
-[3]Tempo
-[4]Calculador Atomico
-[5]
-[6]Peso
-[7]Matematica 
-[8]Universo(beta)
-[9]
-[10]
-[x]sair
-
+[2]Medidas
 ''')
-sel=int(input('selecione uma opção: '))
-#
-#Calculos envolvendo velocidade
-if sel==1:
-    print('CÁLCULOS ENVOLVENDO VELOCIDADE')
-    print('''
-    [1]MRUV
-    [2]Equação de Torriceli
-    [3]
-    ''')
-    sel1=int(input(' '))
-
-#VELOCIDADE_MRUV
-    if sel1==1:
-       print('MRUV')
-       print('Vamos Começar')
-       vel01=float(input('Digite a velocidade: '))
-       vel02=float(input('Digite a velocidade inicial: '))
-       tem01=float(input('Digite o Tempo: '))
-       
-#VELOCIDADE Torriceli
-    elif sel1==2:
-       print('Formula de Torriceli')
-
-# 
-#calculos envolvendo Distancias
-elif sel==1:
-   print('Calculos envolvendo distancia')
-   print('''
-   [1]Ano-Luz
-   [2]Converso
-   ''')
-#
-#tempo
-if sel==3:
-   print('tempo')
-   print('''
-   [1]Distorção Temporal a Partir da Velocidade 
-   [2]
-   [3]
-   ''')
-   sel2= int(input('Selecione a opção: '))
-   #
-   if sel2 ==1:
-      print('Distorção temporal')
-
+print("o programa e grande por isso esta partido em varios menus.")
+sel=int(input('Selecionar a opção: '))
+print('')
 ###
-#universo
-if sel==8:
-   menu=Tk()
-   menu.mainloop()
+###
+#Medidas
+if sel ==2:
+   print('Converter Medidas')
+   
+
+
+
+#Velocidade.
+if sel==1:
+   print('Envolvendo Velocidade')
+   print('''
+   [!]CONVERSORES
+   --------------
+   [1]km/s -> m/s
+   [2]m/s -> km/s
+   --------------
+   [!]EQUAÇÕES  
+   --------------
+   [3]Torriceli
+   [4]MRUV
+   --------------
+   ''')
+   sel01=int(input('Selecione uma opção: '))
+   #Conversores
+   if sel01==1:
+      #
+      print('converter km/s -> m/s')
+      #recolher dados
+      km=float(input('Digite a velocidade em km/h: '))
+      #calcular
+      clc=km/3.16
+      #levando o resultado
+      while(clc>0):
+         #quando o valor for acima de 0 esse valor sera exibido
+         print('conversão concluida, de km/h {:.2f} para m/s deu {:.2f}m/s'.format(km,clc))
+         print (" ")
+      else:
+         #se o valor for menor que 0 esse resultado sera exibido
+         print('velocidade menor que 0 {:.2f}'.format(clc))
+         print (" ")
+
+   ###
+   #Segunda conversão
+   if sel01==2:
+      print('de m/s para km/h')
+      m=float(input('digite a velocidade em metro: '))
+      clc01=m*3.16
+      print('A conversão deu {:.3f}m/s'.format(clc01))
+      print('finalizado')
