@@ -17,7 +17,7 @@ print('''
 [9]
 [10]
 [x]sair
-Use com
+
 ''')
 sel=int(input('selecione uma opção: '))
 #
@@ -35,6 +35,9 @@ if sel==1:
     if sel1==1:
        print('MRUV')
        print('Vamos Começar')
+       vel01=float(input('Digite a velocidade: '))
+       vel02=float(input('Digite a velocidade inicial: '))
+       tem01=float(input('Digite o Tempo: '))
        
 #VELOCIDADE Torriceli
     elif sel1==2:
