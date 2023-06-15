@@ -35,6 +35,8 @@ if sel ==2:
       str1=float(input('Digite a distancia em metro: '))
       clc02=str1*1000
       print('a conversão de {}m para km e de {:.2f}km'.format(str1,clc02))
+
+      
 #Velocidade.
 if sel==1:
    print('Envolvendo Velocidade')
