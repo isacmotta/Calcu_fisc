@@ -22,14 +22,19 @@ if sel ==2:
    [2]Km --> m
    ''')
    #
-   sel02=int(input('Selecione'))
-   #
+   sel02=int(input('Selecione: '))
+   #km-->m
+   if sel02==2:
+      print('Convertendo km -> m')
+      str2=float(input('Digite a distancia em km: '))
+      clc03=str2/1000
+      print('A conversão de {}km para metro e de {:.2f}m'.format(str2,clc03))
+   #metro->km
    if sel02==1:
       print('de metro para km')
       str1=float(input('Digite a distancia em metro: '))
       clc02=str1*1000
       print('a conversão de {}m para km e de {:.2f}km'.format(str1,clc02))
-
 #Velocidade.
 if sel==1:
    print('Envolvendo Velocidade')
