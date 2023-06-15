@@ -17,9 +17,18 @@ print('')
 #Medidas
 if sel ==2:
    print('Converter Medidas')
-   
-
-
+   print('''
+   [1]metro --> Km
+   [2]Km --> m
+   ''')
+   #
+   sel02=int(input('Selecione'))
+   #
+   if sel02==1:
+      print('de metro para km')
+      str1=float(input('Digite a distancia em metro: '))
+      clc02=str1*1000
+      print('a conversão de {}m para km e de {:.2f}km'.format(str1,clc02))
 
 #Velocidade.
 if sel==1:
